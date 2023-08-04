@@ -1,0 +1,14 @@
+--- 
+import Header from "../components/widgets/Header.astro"
+const {title} = Astro.props;
+---
+<!DOCTYPE html>
+<html class="bg-slate-800">
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <Header />
+        <slot />
+    </body>
+</html>

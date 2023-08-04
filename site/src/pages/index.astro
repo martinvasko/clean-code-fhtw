@@ -1,0 +1,10 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Hero from '../components/widgets/Hero.astro';
+---
+<Layout>
+	<Hero image={{ src: import('../assets/images/technikum-wien.jpg'), alt: 'Technikum Wien'}}>
+		<Fragment slot="title">Clean Code @ Technikum Wien</Fragment>
+		<Fragment slot="subtitle">Principles, advantages and examples</Fragment>
+	</Hero>
+</Layout>
