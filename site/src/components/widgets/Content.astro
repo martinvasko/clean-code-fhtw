@@ -1,7 +1,14 @@
 ---
 const { id, title } = Astro.props;
 ---
+
 <section id={id} class="pb-4">
-    <h2 class="text-white text-2xl pb-2">{title}</h2>
-    <slot></slot>
+  <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+    <div class="max-w-screen-lg sm:text-lg text-gray-400">
+      <h2 class="mb-4 text-4xl tracking-tight font-bold text-white">{title}</h2>
+      <p class="mb-4 font-medium">
+        <slot />
+      </p>
+    </div>
+  </div>
 </section>
