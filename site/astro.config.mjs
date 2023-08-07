@@ -6,6 +6,6 @@ import image from "@astrojs/image";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://martinvasko.github.io',
-  base: '/clean-code-fhtw',
+  base: '',
   integrations: [tailwind(), image()]
 });

@@ -1,15 +1,19 @@
---- 
-import "../styles/global.css";
-import Header from "../components/widgets/Header.astro"
-const {title} = Astro.props;
 ---
+import "../styles/global.css";
+import Header from "../components/widgets/Header.astro";
+const { title } = Astro.props;
+---
+
 <!DOCTYPE html>
-<html class="bg-slate-800">
-    <head>
-        <title></title>
-    </head>
-    <body class="text-gray-300">
-        <Header />
-        <slot />
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body class="text-gray-300 bg-slate-800 text-lg">
+    <Header />
+    <slot />
+  </body>
 </html>
