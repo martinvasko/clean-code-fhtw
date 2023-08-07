@@ -1,26 +1,45 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Hero from '../components/widgets/Hero.astro';
-import Content from '../components/widgets/Content.astro';
+import Layout from "../layouts/Layout.astro";
+import Content from "../components/widgets/Content.astro";
+import Timetable from "../components/widgets/Timetable.astro";
 ---
+
 <Layout>
-	<!-- <Hero image={{ src: import('../assets/images/technikum-wien.jpg'), alt: 'Technikum Wien'}}>
+  <!-- <Hero image={{ src: import('../assets/images/technikum-wien.jpg'), alt: 'Technikum Wien'}}>
 		<Fragment slot="title">Clean Code @ Technikum Wien</Fragment>
 		<Fragment slot="subtitle">Principles, advantages and examples</Fragment>
 	</Hero> -->
-	<!-- Placeholder top -->
-	<div class="pt-24"></div>
-	<Content id="team" title="Team and Overview">
-		<dt>Lector</dt>
-		<dd><a href="https://www.technikum-wien.at/personal/di-dr-martin-vasko/">Martin Vasko</a></dd>
-		<dt>Moodle Course</dt>
-		<dd><a href="https://moodle.technikum-wien.at/course/view.php?id=23730">Moodle-Course</a></dd>
-	</Content>
-	<Content id="registration" title="Registration"></Content>
-	<Content id="timetable" title="Timetable and Lectures"></Content>
-	<Content id="grading" title="Grading"></Content>
-	<Content id="news" title="News"></Content>
-	<Content id="academic-honesty" title="Academic Honesty">
-		We expect all students to work on their own (both for the practical assignments and the tests). Any kind of plagiarism will result in expulsion of the course with a grade N5 (Nicht Gen&uuml;gend).
-	</Content>
+  <!-- Placeholder top -->
+  <div class="pt-24"></div>
+  <Content id="team" title="Team and Overview">
+    <table class="table-auto">
+      <tr>
+        <td>Lector:</td>
+        <td class="w-12"></td>
+        <td
+          ><a href="https://www.technikum-wien.at/personal/di-dr-martin-vasko/"
+            >Martin Vasko</a
+          ></td
+        >
+      </tr>
+      <tr>
+        <td>Moodle Course:</td>
+        <td></td>
+        <td
+          ><a href="https://moodle.technikum-wien.at/course/view.php?id=23730"
+            >Link</a
+          ></td
+        >
+      </tr>
+    </table>
+  </Content>
+  <Content id="registration" title="Registration" />
+  <Timetable />
+  <Content id="grading" title="Grading" />
+  <Content id="news" title="News" />
+  <Content id="academic-honesty" title="Academic Honesty">
+    We expect all students to work on their own (both for the practical
+    assignments and the tests). Any kind of plagiarism will result in expulsion
+    of the course with a grade N5 (Nicht Gen&uuml;gend).
+  </Content>
 </Layout>

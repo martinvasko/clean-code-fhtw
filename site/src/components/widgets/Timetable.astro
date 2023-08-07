@@ -1,0 +1,32 @@
+---
+import Content from "./Content.astro";
+import Timeslot from "./Timeslot.astro";
+---
+
+<Content id="timetable" title="Timetable and Lectures">
+  <div class="relative overflow-x-auto shadow-md sm:rounded-lg bg-slate-900 -z-10">
+    <table class="w-full text-sm text-left text-gray-400">
+      <thead class="text-xs uppercase text-gray-400">
+        <tr class="text-white">
+          <th scope="col" class="px-6 py-3 bg-gray-800">Date</th>
+          <th scope="col" class="px-6 py-3">Content</th>
+          <th scope="col" class="px-6 py-3 bg-gray-800">Additional Resources</th
+          >
+        </tr>
+      </thead>
+      <tbody>
+        <Timeslot
+          date="19:30 13.11.2023"
+          content="Kickoff, Lecture 1"
+          resources=""
+        />
+        <Timeslot date="19:30 20.11.2023" content="" resources="" />
+        <Timeslot date="19:30 27.11.2023" content="" resources="" />
+        <Timeslot date="19:30 04.12.2023" content="" resources="" />
+        <Timeslot date="19:30 11.12.2023" content="" resources="" />
+        <Timeslot date="19:30 18.12.2023" content="" resources="" />
+        <Timeslot date="19:30 08.01.2024" content="" resources="" />
+      </tbody>
+    </table>
+  </div>
+</Content>

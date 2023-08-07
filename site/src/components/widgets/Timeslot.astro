@@ -1,0 +1,13 @@
+---
+import {format, parse} from "date-fns";
+
+const {date, content, resources} = Astro.props;
+const parsePattern = "HH:mm dd.MM.yyyy";
+const formatPattern = "dd.MM.yyyy HH:mm";
+---
+
+<tr class="border-b border-gray-700"></tr>
+    <td class="w-48 px-6 py-4 font-medium  whitespace-nowrap text-white bg-gray-800"><div class="">{format(parse(date, parsePattern, new Date()), formatPattern)}</div></td>
+    <td class="w-96 px-6 py-4">{content}</td>
+    <td class="w-64 px-6 py-4 bg-gray-800">{resources}</td>
+</tr>
